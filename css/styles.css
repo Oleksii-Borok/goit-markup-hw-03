@@ -57,10 +57,6 @@ body {
   color: var(--sec-black);
 }
 
-.header-contacts {
-  color: var(--main-text-color);
-}
-
 .header-contacts:hover,
 .header-contacts:focus,
 .current {
@@ -90,6 +86,7 @@ body {
 }
 
 .strength-list-item {
+  font-size: 14px;
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
@@ -121,23 +118,13 @@ body {
 
 .team-member,
 .member-position {
-  font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
-  letter-spacing: 0.03em;
   text-align: center;
 }
 
-.member-position {
-  font-weight: 400;
-  color: var(--main-text-color);
-}
-
-.works-description {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.03em;
+.team-member {
+  font-weight: 500;
 }
 
 .works-item {
@@ -145,6 +132,11 @@ body {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+}
+
+.works-description {
+  font-size: 16px;
+  line-height: 1.87;
 }
 
 /* ---------------------button---------------------- */
@@ -170,19 +162,16 @@ body {
 .portfolio-button {
   background-color: var(--button-color);
   color: var(--sec-black);
-  width: 128px;
-  height: 38px;
-  left: 576px;
-  top: 174px;
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.62px;
+  line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
 }
 
 .portfolio-button:hover,
-.portfolio-butto:focus {
+.portfolio-button:focus,
+.current-button {
   background-color: var(--blue-color);
   color: var(--white-color);
 }
@@ -209,10 +198,4 @@ body {
 .footer-link:hover,
 .footer-link:focus {
   color: var(--blue-color);
-}
-
-/* Containers */
-.container {
-  width: 1170px;
-  height: 1360px;
 }
