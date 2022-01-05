@@ -49,10 +49,8 @@ body {
 
 .header-link {
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--sec-black);
 }
 
 .header-list {
@@ -135,14 +133,14 @@ body {
   color: var(--main-text-color);
 }
 
-.work-description {
+.works-description {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
 }
 
-.work-title {
+.works-item {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -211,4 +209,10 @@ body {
 .footer-link:hover,
 .footer-link:focus {
   color: var(--blue-color);
+}
+
+/* Containers */
+.container {
+  width: 1170px;
+  height: 1360px;
 }
