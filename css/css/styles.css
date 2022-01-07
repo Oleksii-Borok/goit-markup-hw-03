@@ -7,7 +7,6 @@
   --white-color: #ffffff;
   --button-color: #f5f4fa;
   --adress-color: rgba(255, 255, 255, 0.6);
-  --border-header: #ececec;
 }
 
 .list {
@@ -23,14 +22,6 @@
   color: var(--sec-black);
 }
 
-.container {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
-  outline: 2px solid red;
-}
-
 /*--------------------body-----------------------*/
 
 body {
@@ -42,13 +33,6 @@ body {
 }
 
 /* --------------------header-------------------- */
-
-.header-container {
-  display: flex;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  border-bottom: 1px solid var(--border-header);
-}
 
 .logo {
   font-family: Raleway;
@@ -71,21 +55,12 @@ body {
 
 .header-list {
   color: var(--sec-black);
-  display: flex;
 }
 
 .header-link:hover,
 .header-link:focus,
 .current {
   color: var(--blue-color);
-}
-
-.header-contacts {
-  display: flex;
-}
-
-.header-nav {
-  display: flex;
 }
 
 /* -------------------------main section------------------------ */
@@ -157,15 +132,6 @@ body {
 .works-description {
   font-size: 16px;
   line-height: 1.87;
-}
-
-.work-list {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.container {
-  width: 1200px;
 }
 
 /* ---------------------button---------------------- */
