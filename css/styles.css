@@ -31,6 +31,24 @@
   outline: 2px solid red;
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+}
 /*--------------------body-----------------------*/
 
 body {
@@ -45,9 +63,10 @@ body {
 
 .header-container {
   display: flex;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 24px;
+  padding-bottom: 25px;
   border-bottom: 1px solid var(--border-header);
+  align-items: center;
 }
 
 .logo {
@@ -61,12 +80,21 @@ body {
 
 .logo-header {
   color: var(--sec-logo-color);
+  margin-right: 70px;
 }
 
 .header-link {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+}
+
+.header-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.contacts-item:last-child {
+  margin-left: 50px;
 }
 
 .header-list {
@@ -82,6 +110,7 @@ body {
 
 .header-contacts {
   display: flex;
+  margin-left: auto;
 }
 
 .header-nav {
@@ -89,6 +118,13 @@ body {
 }
 
 /* -------------------------main section------------------------ */
+
+.section {
+  padding-bottom: 94px;
+  padding-top: 94px;
+}
+
+/*---------Hero--------*/
 
 .hero {
   background-color: var(--footer-background);
@@ -101,8 +137,14 @@ body {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
+  padding-top: 200px;
+  max-width: 696px;
+  margin-bottom: auto;
+}
+
+.strength-list {
+  display: flex;
 }
 
 .strength-list-item {
@@ -110,6 +152,10 @@ body {
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
+}
+
+.general-list {
+  display: flex;
 }
 
 .section-title {
@@ -136,6 +182,11 @@ body {
   background-color: var(--button-color);
 }
 
+.team-list {
+  display: flex;
+  align-items: center;
+}
+
 .team-member,
 .member-position {
   font-size: 16px;
@@ -160,12 +211,6 @@ body {
 }
 
 .work-list {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.container {
-  width: 1200px;
 }
 
 /* ---------------------button---------------------- */
@@ -177,6 +222,7 @@ body {
 
 .button-list {
   display: flex;
+  align-items: center;
 }
 
 .hero-button {
@@ -186,13 +232,19 @@ body {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
-  display: block;
+  width: 200;
+  border: 0px;
+  border-radius: 4px;
+  margin-bottom: 200px;
+  margin-top: 30px;
+  padding: 10px 32px 10px 32px;
 }
 
 .hero-button:hover,
 .hero-button:focus {
   color: var(--sec-black);
 }
+
 .portfolio-button {
   background-color: var(--button-color);
   color: var(--sec-black);
