@@ -8,6 +8,7 @@
   --button-color: #f5f4fa;
   --adress-color: rgba(255, 255, 255, 0.6);
   --border-header: #ececec;
+  --team-shadow: rgba(0, 0, 0, 0.25);
 }
 
 .list {
@@ -124,10 +125,15 @@ body {
   padding-top: 94px;
 }
 
-/*---------Hero--------*/
+/*-------------------hero------------------*/
 
 .hero {
   background-color: var(--footer-background);
+}
+
+.hero-container {
+  padding-top: 200px;
+  padding-bottom: 200px;
   text-align: center;
 }
 
@@ -138,24 +144,46 @@ body {
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
-  padding-top: 200px;
   max-width: 696px;
-  margin-bottom: auto;
+  margin: auto;
 }
+
+/* -----------------strength----------------*/
 
 .strength-list {
   display: flex;
 }
 
-.strength-list-item {
+.strength-list-title {
   font-size: 14px;
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
+
+.strength-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.strength-section {
+  margin-bottom: 0px;
+}
+
+/* ----------------general--------------- */
 
 .general-list {
   display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.general-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.general-item {
+  width: 370px;
 }
 
 .section-title {
@@ -178,13 +206,16 @@ body {
   margin: -1px;
 }
 
+/*--------------------team--------------------*/
+
 .team {
   background-color: var(--button-color);
 }
 
 .team-list {
   display: flex;
-  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
 }
 
 .team-member,
@@ -196,13 +227,37 @@ body {
 
 .team-member {
   font-weight: 500;
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 
-.works-item {
+.member-position {
+  margin-bottom: 30px;
+}
+
+.team-list-item {
+  border-radius: 4px;
+  box-shadow: var(--team-shadow);
+  outline: 1px solid teal;
+  background-color: var(--white-color);
+}
+
+.team-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+/* ---------------portfolio-works------------------ */
+
+.portfolio-container {
+  align-items: center;
+}
+
+.works-title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  margin-bottom: 4px;
 }
 
 .works-description {
@@ -210,7 +265,17 @@ body {
   line-height: 1.87;
 }
 
-.work-list {
+.button-list {
+  display: flex;
+}
+
+.works-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.works-list:nth-child(3n + 3) {
+  margin-right: 30px;
 }
 
 /* ---------------------button---------------------- */
@@ -218,24 +283,27 @@ body {
 .button {
   font-family: inherit;
   cursor: pointer;
+  font-weight: 500;
 }
 
 .button-list {
   display: flex;
-  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.button-item:not(:last-child) {
+  margin-left: 8px;
 }
 
 .hero-button {
   background-color: var(--blue-color);
   color: var(--white-color);
-  font-weight: 500;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
-  width: 200;
   border: 0px;
   border-radius: 4px;
-  margin-bottom: 200px;
   margin-top: 30px;
   padding: 10px 32px 10px 32px;
 }
@@ -248,11 +316,13 @@ body {
 .portfolio-button {
   background-color: var(--button-color);
   color: var(--sec-black);
-  font-weight: 700;
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
+  padding: 6px 22px 6px 22px;
+  border: 0px;
+  border-radius: 4px;
 }
 
 .portfolio-button:hover,
@@ -267,6 +337,8 @@ body {
   background-color: var(--footer-background);
   color: var(--adress-color);
   text-decoration: inherit;
+  padding-bottom: 60px;
+  padding-top: 60px;
 }
 
 .address {
@@ -280,6 +352,8 @@ body {
 .footer-link[target='blank'] {
   color: var(--white-color);
 }
+
+.footer-listmargin-bottom: 20px;
 
 .footer-link:hover,
 .footer-link:focus {
