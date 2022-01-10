@@ -246,9 +246,6 @@ body {
 
 /* ---------------portfolio-works------------------ */
 
-.portfolio-container {
-}
-
 .works-title {
   font-weight: 700;
   font-size: 18px;
@@ -260,7 +257,6 @@ body {
 .works-description {
   font-size: 16px;
   line-height: 1.87;
-  margin-bottom: 20px;
 }
 
 .button-list {
@@ -275,14 +271,11 @@ body {
 
 .works-item:not(:nth-child(3n + 3)) {
   margin-right: 30px;
-}
-
-.works-item {
-  margin-top: 20px;
+  margin-bottom: 30px;
 }
 
 .works-space {
-  padding-left: 20px;
+  padding: 20px 24px 20px 24px;
   border: 1px solid var(--border-works-item);
 }
 
